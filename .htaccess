@@ -1,0 +1,12 @@
+php_value date.timezone Europe/Moscow
+AddDefaultCharset UTF-8
+
+Options +FollowSymLinks
+IndexIgnore */*
+
+RewriteCond %{REQUEST_URI} /admin/$
+RewriteRule ^.*$ /admin [R=301,L]
+
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !^/(public)
+RewriteRule (.*) /public/$1

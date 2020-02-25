@@ -1,0 +1,3 @@
+- composer и node (пакеты)
+- app/config/app.php (base_url)
+- npm run dev

@@ -1,0 +1,55 @@
+<!-- main navbar -->
+<div class="page-header page-header-dark">
+    <div class="navbar navbar-expand-md navbar-dark border-transparent">
+        <div class="navbar-brand wmin-0 mr-5">
+            <div class="d-inline-block">
+                <img src="/images/logo_light.png" alt="Панель управления сайтом">
+            </div>
+        </div>
+
+        <ul class="navbar-nav ml-md-auto">
+            <li class="nav-item">
+                <a href="/admin/logout" class="navbar-nav-link">
+                    <i class="icon-exit mr-2"></i>
+                    <strong>Выйти</strong>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /main navbar -->
+
+<!-- Secondary navbar -->
+<div class="navbar navbar-expand-md navbar-light">
+    <div class="text-center d-md-none w-100">
+        <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-navigation">
+            <i class="icon-unfold mr-2"></i>
+            Навигация
+        </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-navigation">
+        <ul class="navbar-nav navbar-nav-highlight">
+            <li class="nav-item">
+                <router-link class="navbar-nav-link" :to="{ name: 'home'}"><i class="icon-pulse2 mr-2"></i> Информ-панель</router-link>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">
+                    <i class="icon-file-text2 mr-2"></i>
+                    Страницы сайта
+                </a>
+                <div class="dropdown-menu">
+                    <div class="dropdown-header">Основные</div>
+                    <router-link class="dropdown-item" :to="{ name: 'pages', params: { id: 'main' }}"><i class="icon-home8"></i> Главная страница</router-link>
+                </div>
+            </li>
+            <li class="nav-item">
+                <router-link class="navbar-nav-link" :to="{ name: 'services'}"><i class="icon-puzzle2 mr-2"></i> Сторонние сервисы</router-link>
+            </li>
+            <li class="nav-item">
+                <router-link class="navbar-nav-link" :to="{ name: 'config'}"><i class="icon-cog3 mr-2"></i> Настройки</router-link>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- /secondary navbar -->

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru-RU" prefix="og: http://ogp.me/ns#">
+<head>
+    <title>Панель управления сайтом</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="anonymous" />
+
+    <!-- Styles -->
+    <link href="{{ mix('backend/css/admin.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ mix('backend/css/font-icomoon.css') }}" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- Page content -->
+<div id="app" class="app-page">
+
+    <!-- Header -->
+    {% include "admin/block/header.twig" %}
+    <!-- /header -->
+
+    <!-- Main content -->
+    <div class="page-content">
+        <div class="content-wrapper">
+            <div class="content">
+                <!-- Content area -->
+                <router-view></router-view>
+                <!-- /content area -->
+            </div>
+        </div>
+    </div>
+    <!-- /main content -->
+
+    <!-- Footer -->
+    <div class="navbar navbar-expand-lg navbar-light">
+        <div class="text-center d-lg-none w-100">
+            <button type="button" class="navbar-toggler dropdown-toggle" data-toggle="collapse" data-target="#navbar-footer">
+                <i class="icon-unfold mr-2"></i>
+                Информация
+            </button>
+        </div>
+
+        <div class="navbar-collapse collapse" id="navbar-footer">
+            <span class="navbar-text">
+              &copy; 2019 <a href="https://analizsite.ru/">AnalizSite</a> by <a href="#" target="_blank">FluDeR</a>
+            </span>
+            <ul class="navbar-nav ml-lg-auto">
+                <li class="nav-item">
+                    <a href="https://analizsite.ru/razrabotka-saytov" class="navbar-nav-link font-weight-semibold">
+                      <span class="text-primary-400">
+                        <i class="icon-certificate mr-2"></i>
+                        Разработка сайтов
+                      </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /footer -->
+
+</div>
+
+<!-- Scripts -->
+<script src="{{ mix('backend/js/admin.js') }}"></script>
+</body>
+</html>

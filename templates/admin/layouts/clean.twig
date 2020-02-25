@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru-RU" prefix="og: http://ogp.me/ns#">
+<head>
+  <title>{{ title }}</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="//fonts.googleapis.com" crossorigin="anonymous" />
+
+  <!-- Styles -->
+  <link href="{{ mix('backend/css/admin.css') }}" type="text/css" rel="stylesheet" />
+  <link href="{{ mix('backend/css/font-icomoon.css') }}" type="text/css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- Page content -->
+<div id="app" class="page-content">
+
+  <!-- Main content -->
+  <div class="content-wrapper">
+
+    <!-- Content area -->
+      {% block content %}
+
+      {% endblock %}
+    <!-- /content area -->
+
+  </div>
+  <!-- /main content -->
+
+</div>
+<!-- /Page content -->
+
+<!-- Scripts -->
+<script src="{{ mix('backend/js/admin.js') }}"></script>
+</body>
+</html>

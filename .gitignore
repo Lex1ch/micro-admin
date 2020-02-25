@@ -1,0 +1,12 @@
+/node_modules
+/public/backend/fonts
+/public/backend/css/
+/public/backend/js/
+/public/assets/js/
+/public/assets/fonts
+/public/assets/css/
+/public/images/
+/.idea
+/vendor
+package-lock.json
+composer.lock
